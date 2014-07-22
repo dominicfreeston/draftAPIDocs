@@ -62,12 +62,12 @@ blah blah how to use it.
 ### requestAccessToken [POST]
 
 + Parameters
-    + client_id
-    + client_secret
-    + grant_type
-    + scope( optional )
-    + username
-    + password
+    + client_id (string) ... a 
+    + client_secret (string) ... 
+    + grant_type (string) ... _always_ `"password"`
+    + scope( string optional ) ... _always_ `"read"`
+    + username(string)
+    + password(string)
     
 + Response 200 (application/json)
 
@@ -75,10 +75,10 @@ blah blah how to use it.
     
 ### refreshAccessToken [GET]
 + Parameters
-    + client_id ( string )
+    + client_id ( string ) ...description
     + client_secret( string )
     + grant_type( string )
-    + scope ( string )
+    + scope ( string ) ... _always_ `"read"`
     + refresh_token
     
 + Response 200 (application/json)
