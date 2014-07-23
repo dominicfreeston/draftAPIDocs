@@ -88,7 +88,7 @@ blah blah how to use it.
 
 # Group Members
 
-All the things we say about the member profiles ya?
+Returns the complete member model object
 
 ## Profile [/giffgaff-api/profile.json]
 
@@ -138,7 +138,7 @@ All the things we say about the member profiles ya?
     [Profile][]
 
 ## Auto topup Settings  [/giffgaff-api/autotopup]
-### set a member's goodybag to reccur [PUT]
+### set a member's goodybag to recur [PUT]
 
 + Request (application/json)
     
@@ -164,8 +164,10 @@ All the things we say about the member profiles ya?
 # Group Numbers
 ## Numbers [/giffgaff-api/numbers]
 ### See which of your contacts in on giffgaff [POST]
-Members' contact numbers are sent as a triple DES encrypted JSON array of number strings (sent as a base64 encoded blob) in international format without the '+' eg `447934776766`
+Members' contact numbers are sent as a triple DES encrypted JSON array of normalised number strings (sent as a base64 encoded blob) in international format without the '+' eg `447934776766`
 The response is a similarly encryped JSON array of the numbers that are on giffgaff.
+
+Phone numbers are normalised by converting them to international format, and then removing all spaces and punctuation, e.g. 447980123123
 
 + Request (application/json)
     
