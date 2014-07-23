@@ -47,15 +47,15 @@ Checks if the API and its internal components are up and running
 
 ##Overview
 
-say all the things that we should say re authentication ya? like:
+All API requests must be authenticated with an access token that is placed in the Authorization HTTP request header (see below).
 
 ###Oauth overview
 
 #### Access Token
-blah blah how to use it.
+The authenticated flow starts with an access token being requested using the username and password as access credentials.
 
 #### Refresh Token
-blah blah how to use it.
+Access tokens have a fixed lifespan, so they must be periodically refreshed.
 
 ## Authorisation [/giffgaff-api/oauth/token{?client_id,client_secret,grant_type,scope,refresh_token,username,password}]
 
