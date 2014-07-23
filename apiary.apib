@@ -30,7 +30,7 @@ Every response will provide an HTTP Header containing the response status code. 
 
 # Group API Status
 
-All the things we should say about status and also forget the weird 2nd 'hearbeat', not sure how to get rid of it :/
+This API provides a way for client to periodically check the status of the connection by sending a small heartbeat message.
 
 ## /giffgaff-api/heartbeat
 
@@ -164,10 +164,10 @@ Returns the complete member model object
 # Group Numbers
 ## Numbers [/giffgaff-api/numbers]
 ### See which of your contacts in on giffgaff [POST]
-Members' contact numbers are sent as a triple DES encrypted JSON array of normalised number strings (sent as a base64 encoded blob) in international format without the '+' eg `447934776766`
+Members' contact numbers are sent as base64 encoded blob of a triple-DES-encrypted JSON array of normalised number strings.
 The response is a similarly encryped JSON array of the numbers that are on giffgaff.
 
-Phone numbers are normalised by converting them to international format, and then removing all spaces and punctuation, e.g. 447980123123
+Phone numbers are normalised by converting them to international format, and then removing all spaces and punctuation, e.g. `447980123123`
 
 + Request (application/json)
     
