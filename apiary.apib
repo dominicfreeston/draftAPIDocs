@@ -57,7 +57,7 @@ The authenticated flow starts with an access token being requested using the use
 #### Refresh Token
 Access tokens have a fixed lifespan, so they must be periodically refreshed.
 
-## Authorisation [/giffgaff-api/oauth/token{?client_id,client_secret,grant_type,scope,refresh_token,username,password}]
+## Authorisation [/giffgaff-api/oauth/token{?client_id,client_secret,grant_type,scope,username,password}]
 
 ### requestAccessToken [POST]
 
@@ -74,6 +74,7 @@ Access tokens have a fixed lifespan, so they must be periodically refreshed.
         { "access_token"  : "77effd7f-f73c-4bb5-a4bf-f3fc8cb5c80d", "token_type" : "bearer", "refresh_token" : "66d31440-089e-49c9-a699-227c79e75f53",  "expires_in"    : 121212, "scope" : "read" }
     
 ### refreshAccessToken [GET]
+
 + Parameters
     + client_id ( string ) ...description
     + client_secret( string )
