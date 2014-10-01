@@ -200,16 +200,16 @@ Purchase a goodybag bundle or airtime credit bundle. Also allows to set Auto Rec
 
 + Parameters
     + sku ( string ) ... SKU code of the goodybag (e.g: BD001)
-    + amount ( string ) ... description
-    + autorecurrence (string) ... description
-    + from_balance ( string ) ... description
-    + autotopup (number) ... description
-    + topupamount (number) ... description
-    + maxnumber (number) ... description
-    + cvv (string) ... description
-    + model_info (string) ... description
-    + os_version (string) ... description
-    + unique_id (string) ... description
+    + amount ( string ) ... 0 = if bundle , 1000 = if topup.. (amount in pence)
+    + autorecurrence (boolean) ... turn autorecurrence of goodybag on or off (`true` or `false`)
+    + from_balance ( boolean ) ... purchase the goodybag from balance (`true`) or saved card (`false`)
+    + autotopup (number) ... turn auto topup of airtime balance on or off (`true` or `false`)
+    + topupamount (number) ... the amount to autotopup
+    + maxnumber (number) ... maximum number of times a month auto topup should occur
+    + cvv (string) ... last 3 or 4 digits on back of card
+    + model_info (string) ... a string describing the device eg "iPhone6", "GalaxyS4"
+    + os_version (string) ... a string describing os version eg "iOS_8.0.1", "Android_4.1.0"
+    + unique_id (string) ... a hexadecimal string identifying the device for iOS we will use `identifierForVendor` e.g `CAE2EE2A-DF53-4839-A8A9-762DEFC462DE`
 
 
 + Request (application/json)
