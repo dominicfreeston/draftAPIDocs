@@ -192,9 +192,36 @@ Phone numbers are normalised by converting them to international format, and the
         
 #Group Buying
 
+## Product List [/giffgaff-api/products]
+
+### get list of products [GET]
+
++ Request (application/json)
+
+    
+    + Headers
+        
+            Authorization: Bearer 77effd7f-f73c-4bb5-a4bf-f3fc8cb5c80d
+
++ Response 200 (application/json)
+
+            {
+                "goodybags" : 
+                  [
+                    {   "max_voice"       :   <number>,
+                        "max_text"        :   <number>,
+                        "max_data"        :   <number>,
+                        "category": [<strings>],
+                        "hc_mins": <number>,
+                        "goodybag_name"   :   <string>,
+                        "price"         :   <number>,
+                    }
+                  ]
+            }    
+
 ## Purchase [/giffgaff-api/bundle]
 
-Purchase a goodybag bundle or airtime credit bundle. Also allows to set Auto Recurrence and Auto Topup
+Purchase a goodybag bundle or airtime credit bundle. You can also set Auto Recurrence and Auto Topup preferences with this endpoint.
 
 ### submit an order [POST]
 
