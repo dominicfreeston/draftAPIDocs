@@ -120,7 +120,10 @@ Returns the complete member model object
                 "voice_left":99,
                 "text_left":499,
                 "data_left":999,
-                "bb_addon":false
+                "bb_addon":false,
+                "voice_max":  250,
+                "text_max":   -1,
+                "data_max":   -1
               },
               "queued_goodybag":null,
               "payback_points":null
@@ -159,13 +162,13 @@ Returns a list of all the products available to the current user
             {
                 "goodybags" : 
                   [
-                    {   "max_voice"       :   <number>,
-                        "max_text"        :   <number>,
-                        "max_data"        :   <number>,
-                        "category": [<strings>],
-                        "hc_mins": <number>,
-                        "goodybag_name"   :   <string>,
-                        "price"         :   <number>,
+                    {   "voice_max"       :   250,
+                        "text_max"        :   -1,
+                        "data_max"        :   -1,
+                        "category": ["3g"],
+                        "hc_mins": null,
+                        "goodybag_name"   :   "BD012",
+                        "price"         :   1200,
                     }
                   ]
             }    
