@@ -141,6 +141,26 @@ Returns the complete member model object
     
     [Profile][]
 
+### Set a member's recurence preferences [POST]
++ Request (application/json)
+
+    
+    + Headers
+        
+            Authorization: Bearer 77effd7f-f73c-4bb5-a4bf-f3fc8cb5c80d
+
+    + Body
+    
+            {
+                "enable" : true,
+                "goodybag_sku" : "BD007"
+            }
+            
++ Response 200
+
+            { 
+                "recurring_goodybag" : true
+            }  
         
 #Group Buying
 
