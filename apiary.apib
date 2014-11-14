@@ -168,7 +168,34 @@ Returns the complete member model object
             { 
                 "recurring_goodybag" : true
             }  
+
+
+## Auto top-up [/giffgaff-api/autotopup]
+
+
+### Set a member's auto top-up preferences [POST]
+
++ Request (application/json)
+
+    
+    + Headers
         
+            Authorization: Bearer 77effd7f-f73c-4bb5-a4bf-f3fc8cb5c80d
+
+    + Body
+    
+            {
+                "enable" : true,
+                "amount" : 1500
+                "max": 2
+            }
+            
++ Response 200 (application/json)
+
+            { 
+                "autotopup" : true
+            }  
+
 #Group Buying
 
 ## Product List [/giffgaff-api/products]
