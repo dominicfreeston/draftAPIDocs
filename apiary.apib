@@ -96,39 +96,64 @@ Returns the complete member model object
 
 + Model (application/json)
 
-    JSON representation of Member Resource.
+    JSON representation of Member Resource
 
     + Body
 
             {
-             "username":"usersim3",
-              "phone_number":"+447700000007",
-              "role":"ROLE_SIM",
-              "balance":700,
-              "free_calls_expiration":"2012-10-20T13:45:18.763+0000",
-              "affiliate":false,
-              "auto_topup":false,
-              "auto_topup_amount":1500,
-              "auto_topup_max_topups":1,
-              "adult_content":false,
-              "phone_notifications":false,
-             "gigabag_notification":false,
-             "recurring_goodybag":false,
-              "current_goodybag":{
-                "goodybag":"Cool Goodybag",
-                "price":0,
-                "start_date":"2012-08-21T23:00:00.000+0000",
-                "end_date":"2012-09-19T23:00:00.000+0000",
-                "voice_left":99,
-                "text_left":499,
-                "data_left":999,
-                "bb_addon":false,
-                "voice_max":  250,
-                "text_max":   -1,
-                "data_max":   -1
-              },
-              "queued_goodybag":null,
-              "payback_points":null
+                "username": "512reg030",
+                "email": "yusuf1@giffgaff.co.uk",
+                "address": {
+                    "county": null,
+                    "city": "Uxbridge",
+                    "postcode": "UB8 1QE",
+                    "address_line_1": "Hertz Uk Ltd  Hertz House",
+                    "address_line_2": "11 Vine Street",
+                },
+                "phone_number": "+447922993627",
+                "sim": {
+                    "sim_type": 4,
+                    "active_generation": 4,
+                },
+                "role": "ROLE_SIM",
+                "balance": 3500,
+                "free_calls_expiration": "2022-01-01T00:00:00.000+0000",
+                "affiliate": true,
+                "user_id": "24262",
+                "first_name": "Yusuf",
+                "last_name": "Moha",
+                "date_of_birth": null,
+                "max_available_sims": 30,
+                "auto_topup": true,
+                "auto_topup_amount": 1500,
+                "auto_topup_max_topups":1,
+                "current_goodybag":{
+                    "goodybag":"Cool Goodybag",
+                    "price":0,
+                    "start_date": "2012-08-21T23:00:00.000+0000",
+                    "end_date": "2012-09-19T23:00:00.000+0000",
+                    "voice_left": 99,
+                    "text_left": 499,
+                    "data_left": 999,
+                    "bb_addon": false,
+                    "voice_max": 250,
+                    "text_max": -1,
+                    "data_max": -1
+                },
+                "queued_goodybag": null,
+                "recurring_goodybag": false,
+                "payback_points": {
+                    "total": 0,
+                    "categories": null,
+                    "periods": null,
+                  },
+                "gigabag_notification":  false,
+                "phone_notification": false,
+                "adult_content": false,
+                "lithium_token": "~2dRMsrfnPNdrqn5Jx~w7W40MbtAWv45mRUcEbxqcRqoZlhWVrf7_XZDxh4eXaD5qo3gMocKkM4iL5pwPmbLOL2SkEABLUJuYPOuxrApmb7iC2s-Bbgv6VYNaauSyX3r2YSCCsT-qPFqHBzuelTFcJkjP68FkcaMQad10lmKTSORK0sKVYawpWVpEUKmmqBFN9R8ylFwiXBDzWNK2N1P5h6fhGdllGhLCEuYY8GTQ..",
+                "card_type": "MASTERCARD",
+                "card_four_digits": "0050",
+                "super_mgm": false,
             }
 
 ### Retrieve a Member Profile [GET]
